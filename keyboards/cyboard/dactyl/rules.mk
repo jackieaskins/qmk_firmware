@@ -12,7 +12,6 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 NKRO_ENABLE = no            # USB Nkey Rollover
-SPLIT_KEYBOARD = yes
 
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 AUDIO_SUPPORTED = no        # Audio is not supported

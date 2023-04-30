@@ -4,10 +4,6 @@
 
 #pragma once
 
-/* Split keyboard settings */
-#define SOFT_SERIAL_PIN GP0
-#define MASTER_LEFT
-
 /* RGB settings */
 #define RGB_DI_PIN GP1
 #define RGBLED_NUM 80
