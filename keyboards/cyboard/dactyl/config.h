@@ -4,13 +4,6 @@
 
 #pragma once
 
-/* Key matrix definitions */
-#define MATRIX_ROWS 14
-#define MATRIX_COLS 7
-#define MATRIX_ROW_PINS { GP8, GP7, GP28, GP6, GP23, GP27, GP21 }
-#define MATRIX_COL_PINS { GP9, GP26, GP22, GP20, GP29, GP4, GP5 }
-#define DIODE_DIRECTION ROW2COL
-
 /* Split keyboard settings */
 #define SOFT_SERIAL_PIN GP0
 #define MASTER_LEFT
