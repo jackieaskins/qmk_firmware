@@ -4,13 +4,15 @@
 
 #pragma once
 
+#define SPLIT_TRANSPORT_MIRROR
+#define IGNORE_MOD_TAP_INTERRUPT // Deprecated, will become the default soon
+
 /* RGB settings */
 #define RGB_DI_PIN GP1
 #define RGBLED_NUM 80
 #define RGB_MATRIX_LED_COUNT 80
 #define RGBLED_SPLIT { 40, 40 }
 #ifdef RGB_MATRIX_ENABLE
-#    define SPLIT_TRANSPORT_MIRROR
 #    define DRIVER_LED_TOTAL RGBLED_NUM
 #    define RGB_MATRIX_SPLIT RGBLED_SPLIT
 #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 120
