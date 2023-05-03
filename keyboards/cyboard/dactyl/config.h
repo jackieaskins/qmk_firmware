@@ -11,6 +11,7 @@
 
 /* RGB settings */
 #define RGB_DI_PIN GP1
+#define RGB_MATRIX_SPLIT { 40, 40 }
 #define RGB_MATRIX_LED_COUNT 80
 
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 120
