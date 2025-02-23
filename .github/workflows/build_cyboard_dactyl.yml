@@ -1,0 +1,33 @@
+name: Build Cyboard Dactyls
+
+on:
+  push:
+    branches:
+      - cyboard_dactyls
+
+jobs:
+  build-dactyl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: d3adb5/build-qmk-fw@v1
+        with:
+          keyboard: cyboard/dactyl
+          keymap: default
+      - uses: actions/upload-artifacts@v4
+        with:
+          name: cyboard-dactyl
+          path: qmk-output
+
+  build-dactyl-usb-c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: d3adb5/build-qmk-fw@v1
+        with:
+          keyboard: cyboard/dactyl_usb_c
+          keymap: default
+      - uses: actions/upload-artifacts@v4
+        with:
+          name: cyboard-dactyl-usb-c
+          path: qmk-output
